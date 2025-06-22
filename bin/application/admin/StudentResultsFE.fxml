@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.controller.StudentResultsFEController">
+   <children>
+      <TableView fx:id="studentfeViewTable" layoutX="14.0" layoutY="67.0" onMouseClicked="#handleStudentFeMouseAction" prefHeight="300.0" prefWidth="466.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf; -fx-border-width: 5; -fx-border-style: dashed;">
+        <columns>
+          <TableColumn fx:id="sno" prefWidth="59.0" text="No" />
+          <TableColumn fx:id="sid" prefWidth="104.0" text="Student_ID" />
+            <TableColumn fx:id="sname" prefWidth="138.0" text="Name" />
+            <TableColumn fx:id="sbatch" prefWidth="82.0" text="Batch" />
+            <TableColumn fx:id="sclass" prefWidth="82.0" text="Class" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtid" disable="true" editable="false" layoutX="245.0" layoutY="389.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtname" disable="true" editable="false" layoutX="527.0" layoutY="389.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtbatch" disable="true" editable="false" layoutX="245.0" layoutY="430.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtclass" disable="true" editable="false" layoutX="527.0" layoutY="430.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtmark" layoutX="869.0" layoutY="475.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Button alignment="CENTER" layoutX="593.0" layoutY="553.0" mnemonicParsing="false" onAction="#btnfeupdateAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ffcc00;" text="Update" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="415.0" layoutY="553.0" mnemonicParsing="false" onAction="#btnfecancelAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ffcc00;" text="Cancel">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label alignment="CENTER" layoutX="151.0" layoutY="394.0" prefHeight="21.0" prefWidth="76.0" text="Student_ID" />
+      <Label alignment="CENTER" layoutX="474.0" layoutY="394.0" prefHeight="21.0" prefWidth="43.0" text="Name" />
+      <Label alignment="CENTER" layoutX="176.0" layoutY="435.0" prefHeight="21.0" prefWidth="43.0" text="Batch" />
+      <Label alignment="CENTER" layoutX="478.0" layoutY="435.0" prefHeight="21.0" prefWidth="36.0" text="Class" />
+      <Label alignment="CENTER" layoutX="777.0" layoutY="480.0" prefHeight="21.0" prefWidth="81.0" text="Exam_Mark" />
+      <TextField fx:id="txtfield" layoutX="14.0" layoutY="14.0" prefHeight="21.0" prefWidth="250.0" promptText="Search..." style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Button fx:id="btnsearch" layoutX="297.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnsearchAction" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #ffcc00;" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font></Button>
+      <TextField fx:id="txtexamname" disable="true" editable="false" layoutX="869.0" layoutY="431.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txttotalquestions" disable="true" editable="false" layoutX="869.0" layoutY="389.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <DatePicker fx:id="txtexamdate" disable="true" editable="false" layoutX="245.0" layoutY="475.0" prefHeight="30.0" prefWidth="170.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Label layoutX="167.0" layoutY="480.0" text="Exam_Date" />
+      <Label layoutX="443.0" layoutY="480.0" text="Exam_Type" />
+      <Label layoutX="780.0" layoutY="438.0" text="Exam_Name" />
+      <Label layoutX="756.0" layoutY="394.0" prefHeight="21.0" prefWidth="108.0" text="Total_Questions" />
+      <ComboBox fx:id="comboexamtype" disable="true" layoutX="527.0" layoutY="473.0" prefHeight="30.0" prefWidth="170.0" promptText="Select exam_type">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TableView fx:id="studentResultFeTable" layoutX="529.0" layoutY="67.0" onMouseClicked="#handleFeExamResultsMouseAction" prefHeight="300.0" prefWidth="625.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf; -fx-border-width: 5; -fx-border-style: dashed;">
+        <columns>
+            <TableColumn fx:id="eid" prefWidth="89.0" text="Student_ID" />
+            <TableColumn fx:id="edate" prefWidth="117.0" text="Exam_Date" />
+            <TableColumn fx:id="ename" prefWidth="102.0" text="Exam_Name" />
+            <TableColumn fx:id="etype" prefWidth="144.0" text="Exam_Type" />
+            <TableColumn fx:id="etotalquestion" prefWidth="98.0" text="Total_Questions" />
+            <TableColumn fx:id="smark" prefWidth="72.0" text="Exam_Mark" />
+        </columns>
+      </TableView>
+      <Button layoutX="746.0" layoutY="553.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #ffcc00;" text="Delete" textFill="#ee0000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

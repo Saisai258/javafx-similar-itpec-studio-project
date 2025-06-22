@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: linear-gradient(  to top,    #96f2ff,   #aad7ff,   #bed7ff,  #d4e7ff,  #e9f7ff);" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.QuestionController1">
+   <children>
+      <HBox prefHeight="63.0" prefWidth="1366.0" style="-fx-background-color: linear-gradient(  to right,  #3377ff,  #468fff,  #5aa5ff,  #6ec0ff,  #82daff,   #96f2ff,   #aad7ff,   #bed7ff);">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/header22.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="63.0" prefWidth="894.0" text="QUESTIONS ADD FORM">
+               <font>
+                  <Font name="Bodoni MT Bold" size="31.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Pane layoutX="6.0" layoutY="113.0" prefHeight="535.0" prefWidth="1357.0" style="-fx-border-color: black;">
+         <children>
+            <Label alignment="CENTER" layoutY="250.0" prefHeight="17.0" prefWidth="1357.0" style="-fx-background-color: #FFFFFF;" text="Answer Group Text (or) Image" />
+            <Label layoutX="359.0" layoutY="268.0" text="( B ) :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="268.0" text="( A ) : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="697.0" layoutY="268.0" text="( C ) : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="1024.0" layoutY="266.0" prefHeight="25.0" prefWidth="38.0" text="( D ) :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="answerA" layoutX="30.0" layoutY="289.0" prefHeight="100.0" prefWidth="300.0" promptText="answrer (a)" wrapText="true" />
+            <TextArea fx:id="answerB" layoutX="359.0" layoutY="289.0" prefHeight="100.0" prefWidth="300.0" promptText="answrer (b)" wrapText="true" />
+            <TextArea fx:id="answerC" layoutX="697.0" layoutY="289.0" prefHeight="100.0" prefWidth="300.0" promptText="answrer (c)" wrapText="true" />
+            <Button layoutX="47.0" layoutY="428.0" mnemonicParsing="false" onAction="#browseA" style="-fx-background-color: #ffcc00;" text="Browse (a)" />
+            <TextArea fx:id="answerD" layoutX="1024.0" layoutY="291.0" prefHeight="100.0" prefWidth="300.0" promptText="answrer (d)" wrapText="true" />
+            <Separator layoutX="332.0" layoutY="267.0" orientation="VERTICAL" prefHeight="233.0" prefWidth="27.0" />
+            <ImageView fx:id="aImage" fitHeight="100.0" fitWidth="199.0" layoutX="153.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(3).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="362.0" layoutY="428.0" mnemonicParsing="false" onAction="#browseB" style="-fx-background-color: #ffcc00;" text="Browse (b)" />
+            <ImageView fx:id="bImage" fitHeight="100.0" fitWidth="198.0" layoutX="483.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(3).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="700.0" layoutY="428.0" mnemonicParsing="false" onAction="#browseC" style="-fx-background-color: #ffcc00;" text="Browse (c)" />
+            <Button layoutX="1026.0" layoutY="429.0" mnemonicParsing="false" onAction="#browseD" style="-fx-background-color: #ffcc00;" text="Browse (d)" />
+            <ImageView fx:id="cImage" fitHeight="100.0" fitWidth="177.0" layoutX="820.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(3).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dImage" fitHeight="100.0" fitWidth="177.0" layoutX="1147.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(3).png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="671.0" layoutY="267.0" orientation="VERTICAL" prefHeight="233.0" prefWidth="27.0" />
+            <Separator layoutX="997.0" layoutY="267.0" orientation="VERTICAL" prefHeight="233.0" prefWidth="27.0" />
+            <TextArea fx:id="question" layoutX="121.0" layoutY="39.0" prefHeight="100.0" prefWidth="450.0" promptText="add your question" wrapText="true" />
+            <Button layoutX="118.0" layoutY="165.0" mnemonicParsing="false" onAction="#imagebrowse" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ffcc00;" text="browse" />
+            <ImageView fx:id="qimage" depthTest="DISABLE" fitHeight="100.0" fitWidth="198.0" layoutX="257.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(3).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="qNo" layoutX="131.0" layoutY="4.0" prefHeight="25.0" prefWidth="47.0" promptText="No." />
+            <Label layoutX="11.0" layoutY="8.0" text="Add Question No:" />
+            <Label layoutX="27.0" layoutY="39.0" text="Add Question:" />
+            <Separator layoutX="670.0" orientation="VERTICAL" prefHeight="248.0" prefWidth="27.0" />
+            <TextArea fx:id="correctAnswer" layoutX="754.0" layoutY="39.0" prefHeight="100.0" prefWidth="450.0" promptText="correct answer" wrapText="true" />
+            <ImageView fx:id="ansImage" depthTest="DISABLE" fitHeight="102.0" fitWidth="210.0" layoutX="889.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(3).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="833.0" layoutY="6.0" text="Correct Answer text (or) Image">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="758.0" layoutY="170.0" mnemonicParsing="false" onAction="#BrowseAns" style="-fx-background-color: #ffcc00;" text="BrowseAns" />
+            <Label layoutX="243.0" layoutY="6.0" text="Question text (or) Image">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="41.0" layoutY="511.0" onAction="#btnACancle" text="Browse Cancle" />
+            <Hyperlink layoutX="365.0" layoutY="511.0" onAction="#btnBCancle" text="Browse Cancle" />
+            <Hyperlink layoutX="699.0" layoutY="509.0" onAction="#btnCCancle" text="Browse Cancle" />
+            <Hyperlink layoutX="1034.0" layoutY="508.0" onAction="#btnDCancle" text="Browse Cancle" />
+            <Hyperlink layoutX="758.0" layoutY="211.0" onAction="#btnAnsCancle" text="Browse Cancle" />
+            <Hyperlink layoutX="116.0" layoutY="211.0" onAction="#btnQCancle" text="Browse Cancle" />
+         </children>
+      </Pane>
+      <Button layoutX="602.0" layoutY="656.0" mnemonicParsing="false" onAction="#btnquestionAdd" prefHeight="39.0" prefWidth="179.0" style="-fx-border-color: #00a73f; -fx-background-color: #ffcc00; -fx-border-radius: 7; -fx-background-radius: 7;" text="ADD" />
+      <ComboBox fx:id="type" layoutX="264.0" layoutY="70.0" prefWidth="150.0" />
+      <Label layoutX="756.0" layoutY="74.0" text=" Year : " />
+      <Label layoutX="957.0" layoutY="74.0" prefHeight="17.0" prefWidth="47.0" text="Month : " />
+      <ComboBox fx:id="chapter" layoutX="492.0" layoutY="70.0" prefWidth="150.0" />
+      <ComboBox fx:id="year" layoutX="792.0" layoutY="70.0" prefWidth="150.0" />
+      <ComboBox fx:id="month" layoutX="1015.0" layoutY="70.0" prefWidth="150.0" />
+      <Label layoutX="429.0" layoutY="75.0" text="Chapter :" />
+      <Label layoutX="14.0" layoutY="75.0" text="Exam Type :" />
+      <Label layoutX="185.0" layoutY="74.0" text="Category :" />
+      <ComboBox fx:id="etype" layoutX="95.0" layoutY="70.0" prefHeight="31.0" prefWidth="68.0" />
+   </children>
+</AnchorPane>

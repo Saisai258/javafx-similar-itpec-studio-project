@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Blog5Controller">
+   <children>
+      <VBox layoutX="140.0" layoutY="14.0" prefHeight="2184.0" prefWidth="887.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="588.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="855.0" prefWidth="870.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="305.0" fitWidth="336.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/what_is_incident_management.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="36.0" prefWidth="520.0" text="IT Incident Management ဆိုတာဘာလဲ။">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="By Administrator 14-Aug-2022">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="84.0" prefWidth="860.0" text="ကိုယ့်ရဲ့ Service/Solution ကနေ လုပ်ဆောင်နေတဲ့အချိန် ပြဿနာတစ်ခု (Program Bug သို့ Issue) ကြုံကြိုက်လာတဲ့အချိန်မှာ Business Operation အပေါ်မှာ သက်ရောက်မှုအနည်းဆုံးနဲ့ ဘယ်လိုလုပ်ဆောင်မယ်.. ပုံမှန်အတိုင်းပြန်ဖြစ်အောင် ဘယ်လိုဆောင်ရွက်မယ်ဆိုပြီး စီမံခန့်ခွဲခြင်းပဲဖြစ်ပါတယ်။ Program Bug (သို့) Issue တွေမရှိအောင် ကိုယ့်ဘက်က သေချာပြင်ဆင်ထားပေမယ့် မျှော်လင့်မထားတဲ့အခြေအနေဖြစ်လာတတ်ပါတယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="43.0" prefWidth="843.0" text="ကိုယ့်ရဲ့ Service/Solution နဲ့ သက်ဆိုင်ပြီး အဆင်မပြေဖြစ်လာပြီဆိုရင် ဘာတွေလုပ်ဆောင်ရမှာလဲ။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="System Down Time အတွင်းမှာ Computer System ချွတ်ယွင်းတယ်ဆို Manual နဲ့ ခဏသွားမလား။ ဘယ်လိုဖြေရှင်းမလဲ။ " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="Temporary Workaround အနေနဲ့ Plan B ထားရှိရပါမယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="Issue ဖြစ်လာတဲ့အကြောင်း အရင်းအမြစ်ကို ရှာဖွေရပါမယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="အဲ့ဒီ Issue ထပ်မံမဖြစ်ပွားအောင် ဆောင်ရွက်သွားရပါမယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="Incident management ကတော့ Company တခုနဲ့တခု ဆောင်ရွက်နေတဲ့ပုံစံချင်းမတူတော့ မိမိတို့ Company ရဲ့ ပုံစံအတိုင်း လုပ်ဆောင်သွားရပါမယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="106.0" prefWidth="845.0" text="IT incident management workflow မှာတော့ End-users တွေရော IT Staff တွေပါ သက်ဆိုင်ပါတယ်။ ဥပမာအားဖြင့် Network Slowdown/Server Down တွေ ဖြစ်လာနိုင်ပါတယ်။ အဲ့ဒီအတွက် IT Staff တွေအနေနဲ့ ဖြစ်လာနိုင်တဲ့ Issues တွေကို ကြိုတင်စဉ်းစားပြီး Temporary ယာယီအားဖြင့် ဘယ်လိုလုပ်ဆောင်မယ်.. Fix/Recovery ကို ဘယ်လိုလုပ်မယ်.. Production environment မှာ System ဘယ်လိုပြန်တင်မယ် ဆိုတဲ့ အစီအစဉ်အကုန် စဉ်းစားထားရပါမယ်။ Incident တွေကို ဖြစ်တဲ့အကြောင်းအရာ၊ ရက်စွဲ၊ အခြေအနေတို့ကို အသေးစိတ်မှတ်ထားမယ်ဆိုရင် နောက်ပိုင်း ဒီ Issue/Problem တက်လာမယ်ဆိုရင် ဘယ်လိုလုပ်ရမယ်ဆိုတာ တခါတည်းသိနိုင်မှာဖြစ်ပါတယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="843.0" text="Service/Solution တစ်ခုအတွက် Incident Management ကလည်း Service/Solution Project တစ်ခုအတွက် အရေးပါတဲ့အခန်းကဏ္ဍတစ်ခုက ပါဝင်နေပါတယ်။" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

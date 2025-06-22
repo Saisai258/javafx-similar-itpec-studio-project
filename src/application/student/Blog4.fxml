@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Blog4Controller">
+   <children>
+      <VBox layoutX="140.0" layoutY="14.0" prefHeight="2184.0" prefWidth="887.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="587.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="1200.0" prefWidth="872.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="330.0" fitWidth="614.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/800px-Business_Process_Reengineering_Cycle.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="36.0" prefWidth="614.0" text="What is Business Process Reengineering?">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="By Administrator 19-Sep-2022">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="90.0" prefWidth="842.0" text="Business process reengineering (BPR) is a management approach that involves the radical redesign of business processes to achieve significant improvements in performance, such as cost reduction, quality improvement, and increased speed. The goal of BPR is to fundamentally change the way work is done to better support the organization's objectives and goals." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="105.0" prefWidth="844.0" text="BPR typically involves a comprehensive review of an organization's existing business processes, with the aim of identifying opportunities for improvement. This can involve analyzing the steps involved in a process, the resources required, and the value added by each step. Once opportunities for improvement have been identified, the organization can redesign the process to eliminate unnecessary steps, streamline workflows, and improve efficiency." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="56.0" prefWidth="843.0" text="BPR can be a complex and challenging undertaking, as it often involves changes to organizational structure, culture, and systems. It is typically led by a team of experts who work closely with stakeholders to identify opportunities for improvement and to design and implement the new processes." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="67.0" prefWidth="863.0" text="BPR is often used to address issues such as outdated processes, inefficiencies, and high costs. It can be applied to a wide range of business functions, including operations, customer service, finance, and human resources. When implemented effectively, BPR can lead to significant improvements in performance and competitiveness." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="27.0" prefWidth="843.0" text="There are several key steps involved in the business process reengineering process:" textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="45.0" prefWidth="843.0" text="Define the scope of the project: This includes identifying the business processes that will be reengineered and the goals of the project." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="843.0" text="Assess the current state of the business process: This involves analyzing the current process to understand how it works and identify opportunities for improvement." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="843.0" text="Identify key stakeholders: These are the people who will be affected by the changes and will need to be involved in the process." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="843.0" text="Design the new business process: This involves creating a detailed plan for the redesigned process, including the steps involved, the resources required, and the value added by each step." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="843.0" text="Implement the new process: This involves implementing the new process and making any necessary changes to systems, structures, and culture." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="843.0" text="Monitor and review the process: This involves tracking the performance of the new process to ensure it is meeting the goals of the project and making any necessary adjustments." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="89.0" prefWidth="856.0" text="It is important to note that business process reengineering is not a one-time event, but rather an ongoing process of continuous improvement. As an organization's needs and objectives change, it may be necessary to revisit and reengineer processes to ensure they remain effective and efficient." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane blendMode="SRC_ATOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.controller.MainViewsController">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2e5ddf;" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="h1" alignment="CENTER" layoutX="55.0" layoutY="83.0" onAction="#btnhome" prefHeight="17.0" prefWidth="90.0" style="-fx-border-color: white; -fx-border-radius: 7; -fx-underline: false;" text="Home" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="h2" alignment="CENTER" layoutX="53.0" layoutY="188.0" onAction="#btnteacher" prefHeight="35.0" prefWidth="90.0" style="-fx-border-color: white; -fx-border-radius: 7; -fx-underline: false;" text="Teacher" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="h3" alignment="CENTER" layoutX="53.0" layoutY="288.0" onAction="#btnstudent" prefHeight="33.0" prefWidth="90.0" style="-fx-border-color: white; -fx-border-radius: 7; -fx-underline: false;" text="Student" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="h4" alignment="CENTER" layoutX="53.0" layoutY="394.0" onAction="#btnadmin" prefHeight="21.0" prefWidth="90.0" style="-fx-border-color: white; -fx-border-radius: 7; -fx-underline: false;" text="Admin" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="34.0" prefHeight="34.0" prefWidth="160.0" text="Main Dashboard" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Agency FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="141.0" prefHeight="34.0" prefWidth="160.0" text="About Of Teacher" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Agency FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="239.0" prefHeight="34.0" prefWidth="160.0" text="About Of Student" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Agency FB" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="344.0" prefHeight="34.0" prefWidth="160.0" text="About Of Admin" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Agency FB" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <top>
+      <GridPane style="-fx-background-color: #6699ff;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1707.0" minWidth="10.0" prefWidth="340.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1108.0" minWidth="0.0" prefWidth="693.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="937.0" minWidth="0.0" prefWidth="169.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="937.0" minWidth="10.0" prefWidth="165.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/header22.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="h5" alignment="CENTER" onAction="#linkRegister" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-border-radius: 7; -fx-underline: false;" text="Register" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></Hyperlink>
+            <Hyperlink fx:id="h6" alignment="CENTER" onAction="#linkLogIn" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-border-radius: 7; -fx-underline: false;" text="Log In " textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></Hyperlink>
+         </children>
+      </GridPane>
+      </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="189.0" layoutY="14.0" prefHeight="21.0" prefWidth="800.0" text="Information Technology Professionals Examination Councll (ITPEC)" textFill="#ee710a">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="question" layoutX="84.0" layoutY="106.0" prefHeight="325.0" prefWidth="1010.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf;">
+               <columns>
+                  <TableColumn fx:id="qno" prefWidth="75.0" text="NO" />
+                  <TableColumn fx:id="qBatch" prefWidth="75.0" text="Batch" />
+                  <TableColumn fx:id="qClass" minWidth="0.0" prefWidth="71.0" text="Class" />
+                  <TableColumn fx:id="qChapter" prefWidth="154.0" text="Chapter Name" />
+                  <TableColumn fx:id="qDescription" prefWidth="144.0" text="Description" />
+                  <TableColumn fx:id="qExamTime" prefWidth="139.0" text="Exam Time" />
+                  <TableColumn fx:id="qExamDate" prefWidth="152.0" text="Exam Date(y/m/d)" />
+                  <TableColumn fx:id="qNumber" prefWidth="116.0" text="NO of Question" />
+                  <TableColumn fx:id="qMarks" prefWidth="79.0" text="Marks" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="84.0" layoutY="68.0" prefHeight="38.0" prefWidth="1010.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 10 10 0 0;" text="EXAM SCHEDULE" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="398.0" layoutY="449.0" prefHeight="21.0" prefWidth="382.0" text="ITPEC Organizations" textFill="#ee710a">
+               <font>
+                  <Font name="Bodoni MT" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="138.0" layoutX="964.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Philnitslogo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="297.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/nstda-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="144.0" layoutX="463.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hitc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="98.0" fitWidth="200.0" layoutX="635.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mcf-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="144.0" layoutX="821.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/itpark-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="200.0" layoutX="63.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ipa.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/itec.png" />
+               </image>
+            </ImageView>
+         </children></Pane> 
+      
+    
+   </center>
+</BorderPane>

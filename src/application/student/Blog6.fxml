@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Blog6Controller">
+   <children>
+      <VBox layoutX="140.0" layoutY="14.0" prefHeight="2184.0" prefWidth="887.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="587.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="861.0" prefWidth="871.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="245.0" fitWidth="451.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/intro_scc_and_vcs.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="36.0" prefWidth="496.0" text="Source Control/Version Control">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="By Administrator 12-Aug-2022">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="843.0" text="What is Source Control? " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="49.0" prefWidth="843.0" text="Source Control is a tool that enables a developer to look back at what date the program code was written by marking what was changed/added." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="45.0" prefWidth="843.0" text="Why do we use source control when doing software development?" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="69.0" prefWidth="843.0" text=" Normally, you can save the changes prepared either with a text file or an Excel file. However, as the number of line numbers of the source code has been modified, it becomes difficult to check again as the changes increase. For easy source code management, you should use source control tools. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="843.0" text="Based on the Main Codebase (source files), developers can simultaneously write the program code in their own private location until they get the correct solution, and then reassemble it in the Main Codebase. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="843.0" text="Among team members, you can find out which source code that includes how many line numbers have been fixed by visiting the Main Codebase." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="47.0" prefWidth="843.0" text=" When the sources of all team members are collected in the main codebase, the latest codebase can be obtained and the testing process can be continued." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="45.0" prefWidth="843.0" text="You can also do Version Control again. In addition to the source files that are being developed, the source code of the first release can be stored separately. So Source Control Tools are also called Version Control Tools." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="843.0" text="Source Control/Version Control Software includes Git, CVS, SVN, Mercurial, and TFS. Git is currently used by many development teams." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="843.0" text="Mainly to retrieve all information related to Source Code Changes." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

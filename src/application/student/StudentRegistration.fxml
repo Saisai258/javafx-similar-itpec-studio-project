@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #2e5ddf, #6699ff); -fx-font-family: Arial;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.StuRegisterationController">
+   <children>
+
+      <!-- Left Information Panel -->
+      <VBox alignment="TOP_CENTER" layoutX="50.0" layoutY="73.0" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #6699ff; -fx-padding: 20; -fx-background-radius: 20px 0px 0px 20px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_profile_no_background.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </ImageView>
+
+            <Label alignment="CENTER" prefHeight="23.0" prefWidth="213.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="INFORMATION" />
+
+            <Label prefHeight="111.0" prefWidth="229.0" style="-fx-text-fill: white; -fx-font-size: 12;" text="&quot;Welcome to the Student Registration Portal! Please fill out all required fields in the form to successfully create your account. Ensure your details are accurate to avoid delays during verification. Contact support if you encounter any issues.&quot;" textAlignment="JUSTIFY" wrapText="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+
+            <Button onAction="#signInLinkAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ffcc00;" text="Have An Account">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+
+      <!-- Right Registration Form Panel -->
+      <VBox alignment="CENTER" layoutX="300.0" layoutY="73.0" prefHeight="500.0" prefWidth="350.0" style="-fx-padding: 20; -fx-background-color: #e6e6e6; -fx-background-radius: 0px 20px 20px 0px;">
+         <children>
+
+            <!-- Profile Photo -->
+            <HBox alignment="CENTER" prefHeight="86.0" prefWidth="310.0">
+               <children>
+                  <ImageView fx:id="profilePhoto" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/images.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+
+            <!-- Browse Button -->
+            <Button onAction="#btnBrowseAction" prefHeight="13.0" prefWidth="56.0" style="-fx-background-color: #ffcc00;" text="Browse">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+
+            <!-- Name Field -->
+            <HBox spacing="10" style="-fx-padding: 10 0;">
+               <children>
+                  <TextField fx:id="txtName" prefHeight="23.0" prefWidth="315.0" promptText="Your Name" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+               </children>
+            </HBox>
+
+            <!-- Email Field -->
+            <TextField fx:id="txtEmail" prefHeight="23.0" prefWidth="288.0" promptText="Your Email" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+
+            <!-- Class and Batch -->
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="310.0" spacing="10">
+               <children>
+                  <ComboBox fx:id="cboClass" prefHeight="25.0" prefWidth="150.0" promptText="Select Class">
+                     <cursor><Cursor fx:constant="HAND" /></cursor>
+                  </ComboBox>
+                  <ComboBox fx:id="cboBatch" prefHeight="25.0" prefWidth="150.0" promptText="Select Batch">
+                     <cursor><Cursor fx:constant="HAND" /></cursor>
+                  </ComboBox>
+               </children>
+            </HBox>
+
+            <!-- Password Fields -->
+            <HBox spacing="10" style="-fx-padding: 10 0;">
+               <children>
+                  <PasswordField fx:id="txtPw" prefHeight="23.0" prefWidth="160.0" promptText="Password" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+                  <PasswordField fx:id="txtConPwd" prefHeight="23.0" prefWidth="161.0" promptText="Confirm Password" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+               </children>
+            </HBox>
+
+            <!-- Date of Birth -->
+            <DatePicker fx:id="dpDOB" prefHeight="23.0" prefWidth="313.0" promptText="Date of Birth" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <cursor><Cursor fx:constant="HAND" /></cursor>
+            </DatePicker>
+
+            <!-- Gender -->
+            <HBox spacing="10" style="-fx-padding: 10 0;">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="82.0" text="Select Gender" />
+                  <RadioButton fx:id="optMale" text="Male">
+                     <cursor><Cursor fx:constant="HAND" /></cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="optFemale" text="Female">
+                     <cursor><Cursor fx:constant="HAND" /></cursor>
+                  </RadioButton>
+               </children>
+            </HBox>
+
+            <!-- Phone -->
+            <HBox spacing="5">
+               <children>
+                  <ComboBox fx:id="cboPhone" prefHeight="23.0" prefWidth="140.0" promptText="Select Code">
+                     <cursor><Cursor fx:constant="HAND" /></cursor>
+                  </ComboBox>
+                  <TextField fx:id="txtPhone" prefHeight="23.0" prefWidth="227.0" promptText="Phone Number" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+               </children>
+            </HBox>
+
+            <!-- Address -->
+            <TextArea fx:id="txtAddress" prefHeight="53.0" prefWidth="308.0" promptText="Your Address" style="-fx-background-color: #ffffff; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextArea>
+
+            <!-- Register Button -->
+            <Button fx:id="btnRegister" onAction="#btnRegisterAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ffcc00; -fx-font-family: Serif; -fx-font-size: 18; -fx-text-fill: white;" text="Register">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor><Cursor fx:constant="HAND" /></cursor>
+            </Button>
+
+         </children>
+      </VBox>
+
+      <!-- Title Label -->
+      <Label layoutX="184.0" layoutY="14.0" style="-fx-text-fill: linear-gradient(to bottom right, #ffffff, #000033);" text="Student Registration Form">
+         <font>
+            <Font name="Monotype Corsiva" size="35.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

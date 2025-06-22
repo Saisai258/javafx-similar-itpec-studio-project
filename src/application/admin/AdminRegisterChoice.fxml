@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="660.0" style="-fx-background-color: linear-gradient(  to top,  #3377ff,  #468fff,  #5aa5ff,  #6ec0ff,  #82daff,   #96f2ff,   #aad7ff,   #bed7ff);" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.controller.AdminRegisterChoiceController">
+   <children>
+      <ImageView fitHeight="65.0" fitWidth="154.0" layoutX="34.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/photo_2025-02-14_22-21-22-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="302.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/photo_2025-02-14_22-21-49-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="32.0" prefHeight="45.0" prefWidth="485.0" text="Choice Registeration Role ">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="208.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnadmin" prefHeight="28.0" prefWidth="103.0" style="-fx-background-color: #ffcc00;" text="Admin">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="394.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnteacher" prefHeight="16.0" prefWidth="110.0" style="-fx-background-color: #ffcc00;" text="Teacher">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="273.0" layoutY="106.0" prefHeight="190.0" prefWidth="388.0" text="An admin is a user with the highest control in a system, responsible for managing users, overseeing operations, and configuring settings.the admin can manage users, view student results, and perform all tasks except generating questions." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

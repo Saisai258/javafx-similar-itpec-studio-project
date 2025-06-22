@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="1166.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.controller.HomesController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="30.0" prefWidth="1166.0" text="Information Technology Professionals Examination Councll (ITPEC)" textFill="#ee710a">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font></Label>
+      <ImageView fitHeight="124.0" fitWidth="200.0" layoutX="78.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ipa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="144.0" layoutX="820.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/itpark-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/itec.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="200.0" layoutX="639.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mcf-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="144.0" layoutX="477.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hitc.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="138.0" layoutX="950.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Philnitslogo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="319.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nstda-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="468.0" layoutY="446.0" prefHeight="31.0" prefWidth="231.0" text="ITPEC Organizations" textFill="#ee710a">
+         <font>
+            <Font name="Bodoni MT" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="question" layoutX="94.0" layoutY="116.0" prefHeight="325.0" prefWidth="1010.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf; -fx-border-width: 2;">
+         <columns>
+            <TableColumn fx:id="qno" prefWidth="75.0" text="NO" />
+            <TableColumn fx:id="qBatch" prefWidth="75.0" text="Batch" />
+            <TableColumn fx:id="qClass" minWidth="0.0" prefWidth="71.0" text="Class" />
+            <TableColumn fx:id="qChapter" prefWidth="154.0" text="Chapter Name" />
+            <TableColumn fx:id="qDescription" prefWidth="144.0" text="Description" />
+            <TableColumn fx:id="qExamTime" prefWidth="139.0" text="Exam Time" />
+            <TableColumn fx:id="qExamDate" prefWidth="152.0" text="Exam Date(y/m/d)" />
+            <TableColumn fx:id="qNumber" prefWidth="116.0" text="NO of Question" />
+            <TableColumn fx:id="qMarks" prefWidth="79.0" text="Marks" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="94.0" layoutY="78.0" prefHeight="38.0" prefWidth="1010.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 10 10 0 0;" text="EXAM SCHEDULE" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

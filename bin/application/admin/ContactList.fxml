@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.controller.ContactListController">
+   <children>
+      <TableView fx:id="contactList" layoutX="71.0" layoutY="111.0" onMouseClicked="#onMouseClick" prefHeight="379.0" prefWidth="602.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf; -fx-border-width: 5; -fx-border-style: dashed;">
+        <columns>
+          <TableColumn fx:id="tNo" prefWidth="41.0" text="No" />
+          <TableColumn fx:id="tName" prefWidth="202.0" text="Name" />
+            <TableColumn fx:id="tDate" prefWidth="123.0" text="Date" />
+            <TableColumn fx:id="tGmail" prefWidth="232.0" text="Gmail" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="txtMessage" editable="false" layoutX="709.0" layoutY="164.0" prefHeight="326.0" prefWidth="387.0" style="-fx-border-color: #cccccc; -fx-border-width: 0 5 5 0;" />
+      <Label layoutX="709.0" layoutY="136.0" text="FROM&gt;&gt;&gt;">
+         <font>
+            <Font name="Monotype Corsiva" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtName" layoutX="805.0" layoutY="134.0">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

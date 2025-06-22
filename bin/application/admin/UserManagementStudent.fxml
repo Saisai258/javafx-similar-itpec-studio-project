@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.controller.StudentListController">
+   <children>
+      <TableView fx:id="StudentTableView" layoutX="127.0" layoutY="56.0" onMouseClicked="#handleStudentMouseAction" prefHeight="279.0" prefWidth="912.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf; -fx-border-width: 5; -fx-border-style: dashed;" AnchorPane.leftAnchor="127.0">
+         <columns>
+            <TableColumn fx:id="sNo" prefWidth="49.999969482421875" text="No." />
+            <TableColumn fx:id="sID" prefWidth="83.33334350585938" text="Student ID" />
+            <TableColumn fx:id="sName" prefWidth="103.33334350585938" text="Name" />
+            <TableColumn fx:id="sEmail" minWidth="2.6666259765625" prefWidth="92.0" text="Email" />
+            <TableColumn fx:id="sPhone" prefWidth="113.3333740234375" text="Phone No." />
+            <TableColumn fx:id="sDOB" prefWidth="100.66668701171875" text="Date of Birth" />
+            <TableColumn fx:id="sGender" prefWidth="90.66668701171875" text="Gender" />
+            <TableColumn fx:id="sAddress" prefWidth="125.99993896484375" text="Address" />
+            <TableColumn fx:id="sBatch" prefWidth="75.0" text="Batch" />
+            <TableColumn fx:id="sClass" prefWidth="75.0" text="Class" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtName" disable="true" layoutX="532.0" layoutY="360.0" prefHeight="25.0" prefWidth="249.0" promptText="Name" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtEmail" disable="true" layoutX="183.0" layoutY="398.0" prefHeight="25.0" prefWidth="211.0" promptText="email" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtPhone" disable="true" layoutX="601.0" layoutY="399.0" prefHeight="25.0" prefWidth="179.0" promptText="ph NO" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <ComboBox fx:id="cboPhonePrefix" disable="true" layoutX="533.0" layoutY="399.0" prefHeight="25.0" prefWidth="65.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="txtAddress" alignment="TOP_LEFT" disable="true" layoutX="532.0" layoutY="442.0" prefHeight="52.0" prefWidth="249.0" promptText="address" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Button layoutX="327.0" layoutY="545.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #ffcc00;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font></Button>
+      <RadioButton fx:id="optMale" disable="true" layoutX="183.0" layoutY="486.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white;" text="Male" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="optFemale" disable="true" layoutX="276.0" layoutY="484.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="86.0" style="-fx-background-color: white;" text="Female" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <DatePicker fx:id="dpDOB" disable="true" layoutX="183.0" layoutY="439.0" prefHeight="25.0" prefWidth="211.0" promptText="dob" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <TextField fx:id="txtStudentID" disable="true" editable="false" layoutX="183.0" layoutY="359.0" prefHeight="25.0" prefWidth="211.0" promptText="ID" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Label layoutX="466.0" layoutY="362.0" prefHeight="20.0" prefWidth="54.0" text="Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="400.0" prefHeight="20.0" prefWidth="48.0" text="Email :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="401.0" prefHeight="20.0" prefWidth="73.0" text="Phone No :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="442.0" prefHeight="17.0" prefWidth="73.0" text="Address :" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="442.0" text="Date of Birth :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="484.0" prefHeight="17.0" prefWidth="73.0" text="Gender :" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="362.0" prefHeight="17.0" prefWidth="73.0" text="Student ID :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="sImage" fitHeight="151.0" fitWidth="211.0" layoutX="828.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="475.0" layoutY="505.0" text="Class : " />
+      <TextField fx:id="texClass" layoutX="533.0" layoutY="501.0" prefHeight="28.0" prefWidth="86.0" promptText="Class" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Label layoutX="650.0" layoutY="505.0" text="Batch : " />
+      <TextField fx:id="txtBatch" layoutX="696.0" layoutY="501.0" prefHeight="25.0" prefWidth="86.0" promptText="Batch" style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+      <Button layoutX="524.0" layoutY="545.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #ffcc00;" text="Delete" textFill="#f50000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnsearch" layoutX="410.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnsearchAction" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #ffcc00;" text="Search">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="txtfield" layoutX="127.0" layoutY="14.0" prefHeight="21.0" prefWidth="250.0" promptText="Search..." style="-fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+   </children>
+</AnchorPane>

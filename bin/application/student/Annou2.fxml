@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Annou2Controller">
+   <children>
+      <VBox layoutX="140.0" layoutY="14.0" prefHeight="1013.0" prefWidth="887.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="587.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="1003.0" prefWidth="865.0">
+                     <children>
+                        <ImageView fitHeight="244.0" fitWidth="471.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/what-is-project-management-process-585x372.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="866.0" text="Management">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Introduction to Management Principles:">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="108.0" prefWidth="841.0" text="Effective management is critical to the success of ITPEC’s IT projects. It encompasses planning, organizing, leading, and controlling an organization's resources to achieve specific goals. Managers play a key role in guiding teams, managing risks, and ensuring project objectives are met, thereby driving the organization toward its strategic goals." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Key Concepts in Management:">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="124.0" prefWidth="860.0" text="Several key concepts form the foundation of effective management. Project Management Frameworks, such as PMBOK (Project Management Body of Knowledge), Agile, and Scrum, provide structured approaches to managing projects. Risk Management involves identifying, assessing, and mitigating risks that could impact the project. Efficient Resource Allocation ensures that time, money, and personnel are distributed effectively to maximize productivity and achieve project goals." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Management Process:">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="91.0" prefWidth="848.0" text="The management process includes five main stages. During Initiation, the project is defined and necessary approvals are obtained. The Planning stage involves developing detailed project plans, including scope, schedule, and budget. Execution is the stage where people and resources are coordinated to carry out the project plan. Monitoring and Controlling involve tracking progress and making necessary adjustments. Finally, the Closing stage finalizes all project activities and formally closes the project." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Best Practices:">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="91.0" prefWidth="848.0" text="Studying real-world examples of effective project management can provide valuable insights. Case studies of successful IT projects highlight best practices and lessons learned. Additionally, interviews with experienced IT managers can offer practical advice on managing teams, handling project crises, and maintaining productivity." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Resources:">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="91.0" prefWidth="848.0" text=" For further development, books like &quot;Project Management: A Systems Approach to Planning, Scheduling, and Controlling&quot; by Harold Kerzner and &quot;The Lean Startup&quot; by Eric Ries are highly recommended. Online courses from platforms like Coursera, edX, and LinkedIn Learning offer comprehensive training in project management skills." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

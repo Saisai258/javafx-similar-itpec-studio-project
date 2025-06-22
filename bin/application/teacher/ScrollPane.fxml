@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1050.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.ScrollPaneController">
+   <children>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="23.0" prefHeight="48.0" prefWidth="988.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 20 20 0 0;" text="Exam Schedule" textAlignment="CENTER" AnchorPane.leftAnchor="6.0">
+         <font>
+            <Font name="Segoe UI Italic" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="question" layoutX="6.0" layoutY="71.0" prefHeight="458.0" prefWidth="988.0" style="-fx-background-color: #6699ff; -fx-border-color: #2e5ddf; -fx-border-width: 0 5 5 5; -fx-border-style: dashed;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="56.0">
+        <columns>
+          <TableColumn fx:id="qno" prefWidth="75.0" text="NO" />
+          <TableColumn fx:id="qBatch" prefWidth="75.0" text="Batch" />
+            <TableColumn fx:id="qClass" minWidth="0.0" prefWidth="71.0" text="Class" />
+            <TableColumn fx:id="qChapter" prefWidth="154.0" text="Chapter Name" />
+            <TableColumn fx:id="qDescription" prefWidth="144.0" text="Description" />
+            <TableColumn fx:id="qExamTime" prefWidth="139.0" text="Exam Time" />
+            <TableColumn fx:id="qExamDate" prefWidth="152.0" text="Exam Date(y/m/d)" />
+            <TableColumn fx:id="qNumber" prefWidth="102.0" text="NO of Question" />
+            <TableColumn fx:id="qMarks" prefWidth="65.0" text="Marks" />
+        </columns>
+      </TableView>
+      <Button layoutX="856.0" layoutY="533.0" mnemonicParsing="false" onAction="#addScheduleAction" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #ffcc00;" text="Add New">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></Button>
+      <Button layoutX="733.0" layoutY="533.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #ffcc00;" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

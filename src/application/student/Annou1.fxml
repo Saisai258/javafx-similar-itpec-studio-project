@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Annou1Controller">
+   <children>
+      <VBox layoutX="150.0" layoutY="14.0" prefHeight="600.0" prefWidth="866.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="584.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="599.0" prefWidth="848.0" style="-fx-padding: 10;">
+                     <children>
+                        <ImageView fitHeight="203.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Business-Strategy-PNG-Clipart.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="866.0" text="Strategy">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Introduction to Strategic Planning">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="71.0" prefWidth="805.0" text="Strategic planning is crucial for ITPEC (Information Technology Professional Examination Council) to align IT projects with organizational goals." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="50.0" prefWidth="820.0" text="It involves defining long-term objectives, identifying resources, and creating a roadmap to achieve desired outcomes." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Key Elements of a Successful Strategy">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Vision and Mission Statements:">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Vision Statement: A long-term view of what the organization wants to achieve. For example, &quot;To be the leading provider of IT certification programs globally.&quot;Mission Statement: Defines the organization's purpose and primary objectives. For example, &quot;To enhance IT professionals' skills through rigorous and recognized certification programs.&quot;" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

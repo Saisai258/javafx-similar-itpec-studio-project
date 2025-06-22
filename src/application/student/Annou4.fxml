@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Annou4Controller">
+   <children>
+      <VBox layoutX="150.0" layoutY="14.0" prefHeight="1263.0" prefWidth="866.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="587.0" prefWidth="866.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="1221.0" prefWidth="847.0" style="-fx-padding: 10;">
+                     <children>
+                        <ImageView fitHeight="203.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Business-Strategy-PNG-Clipart.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="866.0" text="New Features">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="On-Demand Exam Scheduling">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="43.0" prefWidth="846.0" text="Candidates can now schedule their exams on-demand, offering flexibility to choose a time that best fits their preparation and availability." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Multi-Language Support">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="The certification exams and resources will now be available in multiple languages, ensuring accessibility for candidates across diverse regions." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Skill Validation with Digital Badges">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Showcase your expertise with verifiable digital badges that can be shared on LinkedIn, resumes, and other professional platforms to highlight your achievements" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="AI-Based Skill Gap Analysis">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Access a personalized report identifying areas for improvement and recommendations for targeted study, leveraging advanced AI technology." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Virtual Proctoring for Remote Exams">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Candidates can take certification exams remotely with secure, AI-powered virtual proctoring, ensuring integrity and convenience." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Customizable Study Plans">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="A new online tool will allow candidates to create personalized study plans based on their exam goals, available time, and preferred learning pace." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Interactive Practice Labs">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Hands-on virtual labs will provide practical experience in real-world scenarios, helping candidates gain confidence in applying theoretical concepts." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Global Leaderboard for Motivation">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Join a global leaderboard where candidates can track their progress, compare scores, and find motivation through friendly competition." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Continuous Learning Access">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Certified candidates will gain access to a curated library of advanced learning materials to support ongoing skill development even after achieving certification." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Employer Verification Portal">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Employers can now easily verify candidate credentials through a secure online portal, enhancing the value and credibility of ITPEC certifications." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

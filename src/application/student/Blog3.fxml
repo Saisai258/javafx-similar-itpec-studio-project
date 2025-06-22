@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Blog3Controller">
+   <children>
+      <VBox layoutX="140.0" layoutY="14.0" prefHeight="2184.0" prefWidth="887.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="589.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="2800.0" prefWidth="871.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="231.0" fitWidth="396.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/number-system-tech.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="367.0" text="Radix Conversion">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="By Administrator 19-Sep-2022">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="86.0" prefWidth="847.0" text="The number system we most familiar is Decimal (Base 10) which is used in our real world for counting numbers, cash, amount and other things. As a computer, it uses Binary (Base 2) number system, as they symbolizes for operating two states - on and off and its binary combinations. In computing, we also use Hexadecimal (Base 16) or Octal (Base 8) number systems, as a compact form of binary number representation." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="469.0" fitWidth="435.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(9).png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="235.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="155.0" prefWidth="853.0" text="Decimal Number system ranges from 0 to 9, which will count up next to 10 (ten). The lowest place is the rightmost position, and each successive position to the left has a higher place value. The rightmost position represents the &quot;ones&quot; column, the next position represents the &quot;tens&quot; column, the next position represents &quot;hundreds&quot;, etc. Therefore, the number &quot;123&quot; represents 1 hundred(102), 2 tens(101) and 3 tens(100). Basically, after we count up the number from 0 to 9 (9 ones of 100), there is no number count up next to 9. So, it will go up 1 at the left one position and the right position will go to start 0. The next number we count will be 10 which defines 1 tens of 101 and 0 ones of 100.Binary, Octal and Hexadecimal numbers goes the same way to count. When decimal number is based on 10, binary number will be based on 2, octal will be 8 and Hexadecimal will be 16." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="So, the number of three digits position as follows. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="33.0" prefWidth="843.0" text="- 22 , 21 , 20" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="- 82 , 81 , 80" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="27.0" prefWidth="843.0" text="- 162 , 161 , 160" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="So, we are going to learn to convert between those number systems (decimal, binary, octal and hexadecimal numbers)." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="Let's divided into three groups." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(1) Decimal ⇔ Binary, Octal and Hexadecimal numbers" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(2) Binary, Octal and Hexadecimal ⇔ Decimal numbers" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(3) Binary ⇔ Octal ⇔ Hexadecimal" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="39.0" prefWidth="447.0" text="(1) Decimal ⇔ Binary, Octal and Hexadecimal numbers">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="47.0" prefWidth="843.0" text="Let's see the example. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="843.0" text="Decimal Number : (23)10" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="449.0" text="➡ (23)10 To Binary Number (Base 2) =&gt; The result is (10111)2 ">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="193.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(10).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="43.0" prefWidth="848.0" text="Note: The last digit will be the 1st remainder and it will go the sequence as 5th, 4th, 3rd, 2nd and 1st. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="417.0" text="➡ (23)10 To Octal Number (Base 8) =&gt; The result is (27)8 ">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="103.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(11).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="39.0" prefWidth="843.0" text="Note: The last digit will be the 1st remainder and it will go the sequence as 2nd and 1st. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="487.0" text="➡ (23)10 To Hexadecimal Number (Base 16) =&gt; The result is (17)16 ">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="119.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(12).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="43.0" prefWidth="848.0" text="Note: The last digit will be the 1st remainder and it will go the sequence as 2nd and 1st. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="45.0" prefWidth="481.0" text="(2) Binary, Octal and Hexadecimal ⇔ Decimal numbers">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="497.0" text="(111011)2 To Decimal Number (Base 10) =&gt; The result will be (59)10 ">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="151.0" fitWidth="673.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(13).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="497.0" text="(124)8 To Decimal Number (Base 10) =&gt; The result will be (84)10 ">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="151.0" fitWidth="673.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(14).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="497.0" text="(A2)16 To Decimal Number (Base 10) =&gt; The result will be (162)10 ">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="151.0" fitWidth="673.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(15).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="497.0" text="(3) Binary ⇔ Octal ⇔ Hexadecimal">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="849.0" text="During conversion among binary, octal and hexadecimal numbers, we have to convert to Base 2 Binary number format. We can represent three digits separator for Octal number and four digits separator for Hexadecimal number. " textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="151.0" fitWidth="673.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(16).png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/commons-codec-1.15 (1).jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/commons-collections4-4.4.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/commons-compress-1.21.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/commons-io-2.11.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/commons-logging-1.0.4.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/commons-math3-3.6.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/fontbox-2.0.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.base.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.controls.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.fxml.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.graphics.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.media.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.swing.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx.web.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/javafx-swt.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/log4j-api-2.17.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/log4j-core-2.17.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/mysql-connector-java-8.0.27.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/pdfbox-2.0.9.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/pdfbox-tools-3.0.4.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/poi-5.2.3.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/poi-ooxml-5.2.3.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/poi-ooxml-full-5.2.3.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/SparseBitSet-1.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/JavaWorkspace/ITPECOldQuestionProject/javafx-sdk-19/lib/xmlbeans-5.1.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

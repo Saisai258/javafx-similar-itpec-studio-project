@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.TeacherHomecontroller">
+    
+    <!-- Left Panel (with Header) -->
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="584.0" prefWidth="200.0" style="-fx-background-color: #2e5ddf; -fx-padding: 0 10 0 10; -fx-spacing: 10;">
+         <Label alignment="CENTER" prefHeight="34.0" prefWidth="200.0" text="Teacher Home" textFill="WHITE" underline="true">
+            <font>
+               <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+         </Label>
+         <Hyperlink fx:id="h1" alignment="CENTER" onAction="#btnhomeAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Home" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Label alignment="CENTER" prefHeight="34.0" prefWidth="200.0" text="Student Result" textFill="WHITE" underline="true">
+            <font>
+               <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+         </Label>
+         <Hyperlink fx:id="h2" alignment="CENTER" onAction="#ipResultAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="IP" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Hyperlink fx:id="h3" alignment="CENTER" onAction="#feResultAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="FE" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Label alignment="CENTER" prefHeight="34.0" prefWidth="200.0" text="Question Manage" textFill="WHITE" underline="true">
+            <font>
+               <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+         </Label>
+         <Hyperlink fx:id="h4" alignment="CENTER" onAction="#addQuesAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Insert" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Hyperlink fx:id="h5" alignment="CENTER" onAction="#updateQuesAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Update" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Hyperlink fx:id="h6" alignment="CENTER" onAction="#questionManageLinkAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Other" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Label alignment="CENTER" prefHeight="34.0" prefWidth="200.0" text="Check Question" textFill="WHITE" underline="true">
+            <font>
+               <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+         </Label>
+         <Hyperlink fx:id="h7" alignment="CENTER" onAction="#ipCheckQuestionLinkAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="IP" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Hyperlink fx:id="h8" alignment="CENTER" onAction="#feCheckQuestionLinkAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="FE" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Hyperlink>
+         <Hyperlink fx:id="h11" alignment="CENTER" onAction="#contactUs" prefHeight="31.0" prefWidth="189.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Contact Us" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+         </Hyperlink>
+        </VBox>
+    </left>
+    
+    <!-- Top Navigation Bar -->
+    <top>
+        <HBox prefHeight="100.0" prefWidth="1366.0" style="-fx-background-color: #6699ff;" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fitHeight="100.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/header22.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="h9" alignment="CENTER" onAction="#profileLinkAction" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="850.0" top="35.0" />
+               </HBox.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="h10" alignment="CENTER" onAction="#logoutLinkAction" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10; -fx-underline: false;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="35.0" />
+               </HBox.margin>
+            </Hyperlink>
+            </children>
+        </HBox>
+    </top>
+   <right>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="600.0" prefWidth="1166.0" style="-fx-alignment: CENTER; -fx-background-color: white;">
+               <children>
+                  <ScrollPane prefHeight="638.0" prefWidth="1166.0" style="-fx-background-color: white;">
+                     <content>
+                        <VBox prefHeight="771.0" prefWidth="1150.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="217.0" prefWidth="989.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <VBox prefHeight="214.0" prefWidth="439.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="47.0" prefWidth="285.0" text="ITPEC Questions">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="90.0" right="30.0" top="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="25.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" prefHeight="46.0" prefWidth="261.0" text="For Success Students">
+                                             <VBox.margin>
+                                                <Insets left="110.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="25.0" />
+                                             </font>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#questionManageLinkAction" prefHeight="41.0" prefWidth="239.0" style="-fx-background-color: #ffcc00; -fx-background-radius: 25;" text="Generate Questions">
+                                             <VBox.margin>
+                                                <Insets left="120.0" top="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="21.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <ImageView fitHeight="207.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/photo_2025-02-05_16-49-28.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="522.0" prefWidth="1150.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="1010.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 20 20 0 0;" text="EXAM SCHEDULE" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Black" size="12.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="70.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TableView fx:id="question" prefHeight="325.0" prefWidth="1010.0" style="-fx-background-color: #99ccff; -fx-border-color: #2e5ddf;">
+                                       <columns>
+                                          <TableColumn fx:id="qno" prefWidth="75.0" text="NO" />
+                                          <TableColumn fx:id="qBatch" prefWidth="75.0" text="Batch" />
+                                          <TableColumn fx:id="qClass" minWidth="0.0" prefWidth="71.0" text="Class" />
+                                          <TableColumn fx:id="qChapter" prefWidth="154.0" text="Chapter Name" />
+                                          <TableColumn fx:id="qDescription" prefWidth="144.0" text="Description" />
+                                          <TableColumn fx:id="qExamTime" prefWidth="139.0" text="Exam Time" />
+                                          <TableColumn fx:id="qExamDate" prefWidth="152.0" text="Exam Date(y/m/d)" />
+                                          <TableColumn fx:id="qNumber" prefWidth="116.0" text="NO of Question" />
+                                          <TableColumn fx:id="qMarks" prefWidth="79.0" text="Marks" />
+                                       </columns>
+                                       <VBox.margin>
+                                          <Insets left="70.0" right="70.0" />
+                                       </VBox.margin>
+                                    </TableView>
+                                    <Label alignment="CENTER" prefHeight="31.0" prefWidth="1164.0" text="ITPEC Organizations" textFill="#ee710a">
+                                       <font>
+                                          <Font name="Segoe UI Black" size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="99.0" prefWidth="200.0">
+                                             <children>
+                                                <ImageView fitHeight="124.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/ipa.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/itec.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fitHeight="115.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/itpark-removebg-preview.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fitHeight="98.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/mcf-removebg-preview.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fitHeight="76.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/hitc.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fitHeight="79.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/Philnitslogo-removebg-preview.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fitHeight="115.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/nstda-removebg-preview.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

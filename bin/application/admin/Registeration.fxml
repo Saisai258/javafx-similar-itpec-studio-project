@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top,  #2e5ddf,  #6699ff); -fx-font-family: Arial;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.controller.RegisterationController">
+   <children>
+      <!-- Left panel for Information -->
+      <VBox alignment="TOP_CENTER" layoutX="50.0" layoutY="73.0" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #6699ff; -fx-padding: 20; -fx-background-radius: 20 0 0 20;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/PngItem_1280822.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="23.0" prefWidth="213.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="INFORMATION">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Label>
+            <Label prefHeight="124.0" prefWidth="212.0" style="-fx-text-fill: white; -fx-font-size: 12;" text="&quot;Welcome to the Admin Registration Portal! Please fill out all required fields in the form to successfully create your account. Ensure your details are accurate to avoid delays during verification. Contact support if you encounter any issues.&quot;" textAlignment="JUSTIFY" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+
+      <!-- Right panel for Register Form -->
+      <VBox alignment="CENTER" layoutX="300.0" layoutY="73.0" prefHeight="500.0" prefWidth="350.0" style="-fx-padding: 20; -fx-background-color: #e6e6e6; -fx-background-radius: 0 20 20 0;">
+         <children>
+            <ImageView fx:id="photoImgView" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#btnBrowseAction" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #ffcc00;" text="Browse">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+
+            <TextField fx:id="txtId" promptText="Your Admin ID" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="txtName" promptText="Your Name" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="txtEmail" promptText="Your Email" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+
+            <HBox spacing="5">
+               <ComboBox fx:id="cboPhone" prefWidth="80.0" promptText="Code" />
+               <TextField fx:id="txtPhone" prefHeight="25.0" prefWidth="235.0" promptText="Phone Number" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+
+            <HBox spacing="10">
+               <RadioButton fx:id="optMale" text="Male">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </RadioButton>
+               <RadioButton fx:id="optFemale" text="Female">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </RadioButton>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+
+            <DatePicker fx:id="dpDOB" prefHeight="25.0" prefWidth="317.0" promptText="Date of Birth" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></DatePicker>
+
+            <HBox spacing="10">
+               <PasswordField fx:id="txtPw" promptText="Password" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+               <PasswordField fx:id="conpas" promptText="Confirm Password" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;" />
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+
+            <TextField fx:id="tetTfield" prefHeight="40.0" prefWidth="310.0" promptText="Your Address" style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-width: 0 3 3 0;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+
+            <Button layoutX="496.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnRegisterAction" prefHeight="33.0" prefWidth="187.0" style="-fx-background-color: #ffcc00; -fx-font-size: 18; -fx-font-family: Segoe UI;" text="Register">
+               <font>
+                  <Font name="Segoe UI" size="8.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="198.0" layoutY="14.0" style="-fx-text-fill: linear-gradient(to bottom right, #ffffff, #000033);" text="Admin Registration Form">
+         <font>
+            <Font name="Monotype Corsiva" size="35.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Annou6Controller">
+   <children>
+      <VBox layoutX="150.0" layoutY="14.0" prefHeight="1000.0" prefWidth="866.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="586.0" prefWidth="866.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="900.0" prefWidth="848.0" style="-fx-padding: 10;">
+                     <children>
+                        <ImageView fitHeight="203.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/10-2-innovation-png-pic.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="866.0" text="Innovation">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Cross-Border Certification Recognition">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="27.0" prefWidth="805.0" text="Expanded agreements with international bodies ensure global recognition of ITPEC certifications." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ethics and Compliance Focus">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="New modules on data privacy, ethical hacking, and compliance strengthen the ethical framework of IT professionals." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Multi-Language Exam Support">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Exams will be available in more languages, making certifications accessible to diverse communities." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Credential Verification Portal">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Employers can now verify certifications in real time through a secure digital platform." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Virtual Reality (VR)-Based Training">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Innovative VR modules provide immersive learning experiences for complex IT concepts." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mentorship Program">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Certified professionals can access mentorship opportunities with industry leaders to guide career growth." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Alumni Recognition Events">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text=" Regular events to celebrate top performers and foster networking among ITPEC-certified professionals." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Customizable Certification Tracks">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Tailor certifications to specific career goals by choosing elective modules that align with your field of interest." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Cloud-Based Exam Platforms">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Exams can now be taken securely on a cloud-based system, offering flexibility and accessibility." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

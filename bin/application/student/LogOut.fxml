@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="360.0" style="-fx-background-color: linear-gradient(to top, #2e5ddf ,  #6699ff);" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.LogOutController">
+   <children>
+      <Text fill="WHITE" layoutX="47.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you really want to log out?" wrappingWidth="293.3935546875">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Text>
+      <Button defaultButton="true" layoutX="198.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnlogoutAction" prefHeight="31.0" prefWidth="70.0" text="OK">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="106.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnlogoutcancelAction" prefHeight="31.0" prefWidth="70.0" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="149.0" layoutY="23.0" text="Log Out " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

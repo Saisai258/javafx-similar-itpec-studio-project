@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.QuesManageController">
+   <children>
+      <VBox fx:id="vboxAddQuestions" alignment="TOP_CENTER" layoutX="91.0" layoutY="85.0" prefHeight="117.0" prefWidth="985.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="34.0" prefWidth="991.0" style="-fx-background-radius: 20 20 0 0; -fx-background-color: #6699ff;" text="Questions Insert OR Update" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblWarning" prefHeight="20.0" prefWidth="994.0" style="-fx-background-color: yellow;" text="&quot;Warning: Please ensure that the question added is strictly relevant to the ITPEC exam. Non-compliant questions will be removed immediately.&quot;" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addQuesAction" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: gold; -fx-background-radius: 7;" text="Insert">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#updateQuesAction" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: gold; -fx-background-radius: 7;" text="Update">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="758.0" layoutY="225.0" prefHeight="290.0" prefWidth="318.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 20; -fx-background-image: tree;">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="318.0" style="-fx-background-color: #6699ff; -fx-background-radius: 20 20 0 0;" text="Question Tools" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#addScheduleAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: gold; -fx-background-radius: 10;" text="Add Schedule">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="198.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ChatGPT%20Image%20May%209,%202025,%2005_02_23%20PM.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#chapterEndtest" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: gold; -fx-background-radius: 10;" text="Question File Generate">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="10.0" right="5.0" top="-40.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="91.0" layoutY="225.0" prefHeight="290.0" prefWidth="630.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="700.0" style="-fx-background-color: #6699ff; -fx-background-radius: 20 20 0 0;" text="CHAPTER AND QUESTION TYPES" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT" size="31.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="158.0" prefWidth="630.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 0 0 20 20;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="186.0">
+                     <children>
+                        <Label text="Write Chapters" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="chapter" promptText="Add Chapters" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="226.0">
+                     <children>
+                        <Label text="Exam Types " textFill="#f2f2f2">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="etype" prefHeight="25.0" prefWidth="226.0" promptText="( IP or FE )" />
+                        <Label text="Write Question Types" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="type" promptText="Add Question Types" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#btnNext" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: gold; -fx-background-radius: 7; -fx-border-radius: 7;" text="Add">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="630.0" style="-fx-background-color: #6699ff; -fx-background-radius: 20 20 0 0;" text="YEAR &amp; MONTH ADDING " textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="597.0" style="-fx-background-color: #2e5ddf; -fx-background-radius: 0 0 20 20;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="186.0">
+                     <children>
+                        <Label text="Write Year : " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addYear" alignment="TOP_LEFT" promptText="Add Year" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="226.0">
+                     <children>
+                        <Label text="Write Month : " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addMonth" promptText="Add Month" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#btnYearAdd" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: gold; -fx-background-radius: 7; -fx-border-radius: 7;" text="Add">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

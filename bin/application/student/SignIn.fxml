@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top,  #2e5ddf,  #6699ff);" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.SignInController">
+   <children>
+      <VBox alignment="CENTER" layoutX="400.0" layoutY="50.0" prefHeight="400.0" prefWidth="250.0" style="-fx-padding: 20; -fx-background-color: #e6e6e6; -fx-background-radius: 0Px 20Px 20Px 0Px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="243.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="INFORMATION" />
+            <Label style="-fx-font-size: 12;" text="&quot;Welcome to the Student Registration Portal!Please fill out all required fields in the form to successfully create your account. Ensure your details are accurate to avoid delays during verification. Contact support if you encounter any issues.&quot;" textAlignment="JUSTIFY" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#registerLinkAction" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #ffcc00; -fx-font-size: 18Px; -fx-font-family: segoe ui;" text="Register">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #6699ff; -fx-padding: 20; -fx-background-radius: 20Px 0Px 0Px 20Px;">
+         <children>
+            <Label text="Welcome Back " textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSid" prefHeight="23.0" prefWidth="288.0" promptText="Your Student ID" style="-fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="txtPw" prefWidth="140" promptText="Password" style="-fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+            <Button mnemonicParsing="false" onAction="#handleSignIn" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #ffcc00; -fx-font-family: segoe ui; -fx-font-size: 16;" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Hyperlink onAction="#forgetPwdAction" style="-fx-text-fill: #FFFFFF;" text="Forget Password?" underline="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </VBox>
+      <Label layoutX="224.0" layoutY="4.0" style="-fx-text-fill: linear-gradient(to bottom right, #ffffff, #000033);" text="Student Login Form">
+         <font>
+            <Font name="Monotype Corsiva" size="35.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

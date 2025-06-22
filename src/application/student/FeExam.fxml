@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.FeExamController">
+   <children>
+      <VBox layoutX="85.0" layoutY="94.0" prefHeight="400.0" prefWidth="735.0" style="-fx-background-color: #FFFFFF; -fx-padding: 10;">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="505.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/fe-logo.gif" />
+               </image>
+            </ImageView>
+            <Label prefHeight="64.0" prefWidth="675.0" text="The ITPEC Fundamental Information Technology Engineer Examination (ITPEC FE Exam) is loosely based on the Japan Information Technology Fundamental IT Engineers Examination. It is intended for those who have a basic knowledge of IT and are working in IT-related fields." wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="23.0" prefWidth="663.0" text="The exam is administered for a total of five hours and divided into two parts:" wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="68.0" prefWidth="676.0" text="The Morning AM Exam is a multiple-choice examination that runs 150 minutes. It is composed of 80 questions, all of which are compulsory and in multiple choice. It generally involves application of the fundamental IT concepts and terms, simple numerical calculations and logical analysis. Total score is 100 points." wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="85.0" prefWidth="685.0" text="The Afternoon PM Exam is a multiple-choice examination that runs 150 minutes. It covers knowledge and skills required by individuals who were able to implement pseudocodes and flowcharts. It will require skills in debugging and ability to trace the output of a structured program. Total score is 100 points and each question has its own weight depending on its difficulty." wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="742.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#amChLinkAction" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: #ffcc00;" text="Morning AM Practic" textFill="#0055ff">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#pmChLinkAction" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: #ffcc00;" text="Afternoon PM Practic" textFill="#0055ff">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="837.0" layoutY="94.0" prefHeight="406.0" prefWidth="241.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label prefHeight="33.0" prefWidth="120.0" text="Random Tips" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label prefHeight="179.0" prefWidth="198.0" style="-fx-background-color: #6699ff;" text="Project management is the way a person organizes and manages resources that are necessary to complete a project. People that manage projects are known as Project Managers. A project is a piece of work which is not a process or an operation. It has a start, an end, and goals. [Ref]" textAlignment="JUSTIFY" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

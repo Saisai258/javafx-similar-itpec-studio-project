@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.ExamController">
+   <children>
+      <VBox layoutX="40.0" layoutY="100.0" prefHeight="400.0" prefWidth="1086.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="1033.0" text="Which practice test you want to do?">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="320.0" prefWidth="1086.0">
+               <children>
+                  <VBox fx:id="annouBox1" alignment="TOP_CENTER" prefHeight="320.0" prefWidth="350.0" style="-fx-border-color: #6699ff; -fx-border-width: 10; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="165.0" fitWidth="323.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/unnamed.png" />
+                           </image>
+                        </ImageView>
+                        <Hyperlink onAction="#IpExamLinkAction" prefHeight="65.0" prefWidth="320.0" style="-fx-underline: false; -fx-border-color: #2e5ddf; -fx-border-width: 5; -fx-border-radius: 25;" text="Information Technology Passport Examination" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="annouBox2" alignment="TOP_CENTER" prefHeight="274.0" prefWidth="350.0" style="-fx-border-color: #6699ff; -fx-border-width: 10; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="166.0" fitWidth="323.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/unnamed%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Hyperlink onAction="#FeExamLinkAction" prefHeight="65.0" prefWidth="320.0" style="-fx-underline: false; -fx-border-color: #2e5ddf; -fx-border-radius: 25; -fx-border-width: 5;" text="Fundamental Information Technology Engineer Examination" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="annouBox3" alignment="TOP_CENTER" prefHeight="274.0" prefWidth="350.0" style="-fx-border-color: #6699ff; -fx-border-radius: 20; -fx-border-width: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="163.0" prefWidth="300.0" style="-fx-border-color: gold; -fx-border-radius: 50; -fx-border-width: 10;" text="From MBTC" textFill="#4e00ff">
+                           <font>
+                              <Font name="Monotype Corsiva" size="50.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Hyperlink alignment="CENTER" onAction="#shLinkAction" prefHeight="40.0" prefWidth="320.0" style="-fx-underline: false; -fx-border-radius: 25; -fx-border-color: #2e5ddf; -fx-border-width: 5;" text="Other" wrapText="true">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="65.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

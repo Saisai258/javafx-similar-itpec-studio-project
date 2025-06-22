@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="290.0" style="-fx-background-color: #8c9fa7;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.ProfileFormController">
+   <children>
+      <Pane fx:id="profilePane" layoutY="105.0" prefHeight="368.0" prefWidth="290.0" style="-fx-background-color: #6699ff;">
+         <children>
+            <Label fx:id="sNameLabel" alignment="CENTER" layoutY="75.0" prefHeight="20.0" prefWidth="287.0">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" alignment="CENTER" layoutY="90.0" prefHeight="20.0" prefWidth="287.0">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="110.0" prefHeight="45.0" prefWidth="53.0" text="🛠" textFill="#2d2e2f">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="226.0" prefHeight="45.0" prefWidth="44.0" text="♻" textFill="#2d2e2f">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="68.0" layoutY="118.0" onAction="#linkProfile" text="Change Profile Photo" textFill="#2d2e2f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="3.0" />
+               </padding></Hyperlink>
+            <Hyperlink layoutX="67.0" layoutY="195.0" onAction="#linkPassword" text="Change Password" textFill="#2d2e2f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="3.0" />
+               </padding></Hyperlink>
+            <Hyperlink layoutX="64.0" layoutY="237.0" onAction="#linkDeleteAccount" text="Delete My Account" textFill="#2d2e2f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="3.0" />
+               </padding></Hyperlink>
+            <Hyperlink layoutX="182.0" layoutY="304.0" onAction="#btnCancle" text="&lt;&lt; Cancle" textFill="#2d2e2f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="67.0" layoutY="152.0" onAction="#linkPColorChange" text="Customize Profile" textFill="#2d2e2f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="56.0" fitWidth="44.0" layoutX="20.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pencil.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="24.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lock.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="67.0" layoutY="282.0" onAction="#updateAccount" text="Update My Profile" textFill="#2d2e2f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </Hyperlink>
+            <ImageView fitHeight="74.0" fitWidth="94.0" layoutX="5.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/update-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Canvas fx:id="canvas" height="153.0" layoutX="67.0" layoutY="14.0" width="153.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="67.0" />
+   </children>
+</AnchorPane>

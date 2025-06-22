@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="1535.0" prefWidth="1166.0" style="-fx-background: white;" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.controller.StudentViewController">
+   <content>
+    <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="82.0" prefWidth="1379.0" style="-fx-background-color: white;" />
+      <ScrollPane layoutX="-2.0" layoutY="83.0" prefHeight="1508.0" prefWidth="1379.0" />
+    <AnchorPane layoutX="64.0" layoutY="82.0" minHeight="0.0" minWidth="0.0" prefHeight="1534.0" prefWidth="1151.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutX="-88.0" prefHeight="361.0" prefWidth="1166.0" AnchorPane.leftAnchor="-88.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text focusTraversable="true" layoutX="119.0" layoutY="174.0" style="-fx-font-size: 18px; -fx-text-fill: #333; font-family: Arial, sans-serif;" text="At ITPEC, we are committed to providing cutting-edge programs in emerging technologies. Our institution covers a wide array of topics such as AI, Data Science, Cybersecurity, Cloud Computing, and much more, catering to both beginner and advanced learners." wrappingWidth="714.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="263.0" fitWidth="397.0" layoutX="842.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Screenshot__31_-removebg-preview.png" />
+                     </image>
+                     <viewport>
+                        
+                     </viewport>
+                  </ImageView>
+                  <Text focusTraversable="true" layoutX="119.0" layoutY="270.0" style="-fx-font-size: 18px; -fx-text-fill: #333; font-family: Arial, sans-serif;" text="Learn from industry professionals who have deep, hands-on experience in their respective fields. By becoming a part of ITPEC, you're not only gaining knowledge—you’re gaining practical skills that can propel your career forward in today's tech-driven world." wrappingWidth="714.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c37e08" layoutX="130.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Journey to Excellence Begins Here!" wrappingWidth="653.71435546875">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="55.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="-39.0" layoutY="745.0" prefHeight="356.0" prefWidth="1466.0">
+               <children>
+                  <Label layoutX="73.0" layoutY="45.0" text="Outdoor Learning &amp; Trip" textFill="#559a33">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="55.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="73.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Our carefully planned and organised outdoor learning activities and residential trips provide continuity with classroom learning and help students learn new skills, problem solving and team building, whilst also gaining confidence." wrappingWidth="600.1767578125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="317.0" fitWidth="370.0" layoutX="804.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/330330006_888274569081740_2686170351325678813_n.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="380.0" prefHeight="335.0" prefWidth="1371.0">
+               <children>
+                  <Label layoutX="651.0" layoutY="43.0" text="learning Support" textFill="#a41414">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="55.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="485.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Recognising that all children have different needs and often require varying levels of support, MBTC provides free Learning Support of japanese language, ICM program and computer basic." wrappingWidth="603.1767578125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="307.0" fitWidth="361.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/learning%20support.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-100.0" layoutY="1094.0" prefHeight="356.0" prefWidth="1373.0">
+               <children>
+                  <Label layoutX="600.0" layoutY="41.0" text="Co-Curricular Activities" textFill="#0f018d">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="55.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="589.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Understanding that each student is a unique individual with abilities and talents in different areas, we have developed a comprehensive and dynamic co-curricular programme, helping students to explore their strengths and talents for future success." wrappingWidth="626.1767578125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="309.0" fitWidth="422.0" layoutX="129.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/472780147_1329656618207185_4231390593037113047_n.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Hyperlink layoutX="900.0" layoutY="1477.0" onAction="#btnStudent" text="Are You Student&gt;&gt;&gt;" textFill="#2e5ddf">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

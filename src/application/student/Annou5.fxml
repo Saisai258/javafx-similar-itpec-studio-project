@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Annou5Controller">
+   <children>
+      <VBox layoutX="177.0" layoutY="14.0" prefHeight="1250.0" prefWidth="813.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="586.0" prefWidth="813.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="1259.0" prefWidth="793.0" style="-fx-padding: 10;">
+                     <children>
+                        <ImageView fitHeight="203.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Business-Strategy-PNG-Clipart.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="866.0" text="Updates">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Inclusion of Emerging Technologies">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="46.0" prefWidth="805.0" text="The updated syllabus will cover topics such as Artificial Intelligence (AI), Blockchain, Cloud Computing, and Cybersecurity. These additions reflect the current demand for skilled professionals in these areas." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Practical, Hands-On Testing">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="63.0" prefWidth="830.0" text="Vision Statement: A long-term view of what the organization wants to achieve. For example, &quot;To be the leading provider of IT certification programs globally.&quot;Mission Statement: Defines the organization's purpose and primary objectives. For example, &quot;To enhance IT professionals' skills through rigorous and recognized certification programs.&quot;" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="AI-Powered Learning Resources">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Access a newly developed suite of interactive learning tools powered by AI to personalize your study experience and optimize exam preparation." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Sustainability Focus">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="876.0" text="A dedicated section on IT for sustainability and green technologies will encourage candidates to explore eco-friendly solutions in the tech domain." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Regional and Global Collaboration Opportunities">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="New partnerships with leading IT organizations and educational institutions will provide candidates with expanded networking opportunities and access to cutting-edge IT projects." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Micro-Certifications for Specialized Skills">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="In addition to full certifications, ITPEC will introduce micro-certifications focusing on niche skills like IoT (Internet of Things), DevOps, and Data Analytics. These will allow professionals to quickly upskill in specific areas of demand." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Adaptive Examination Framework">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Exams will now leverage adaptive testing technology, adjusting the difficulty level of questions in real-time based on the candidate’s responses, ensuring a fair and precise assessment of their knowledge." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Gamified Learning Modules">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="To make preparation engaging, ITPEC will introduce gamified learning paths, where candidates can earn badges, unlock levels, and compete on leaderboards while mastering exam topics." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Post-Certification Career Support">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Certified professionals will gain access to career counseling services, job boards, and recruitment drives, ensuring they can capitalize on their new skills and certifications effectively." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Global ITPEC Community Platform">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Launching a dedicated online platform for ITPEC-certified professionals to connect, collaborate, and share insights globally. This will include forums, webinars, and live Q&amp;A sessions with industry experts." wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="610.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

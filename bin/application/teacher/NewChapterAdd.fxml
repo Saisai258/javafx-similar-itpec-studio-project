@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.NewChapterAddController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="21.0" prefHeight="21.0" prefWidth="400.0" text="NEW CHAPTER ADDING">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="98.0" text="Add chapter name : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtChapter" layoutX="68.0" layoutY="142.0" prefHeight="31.0" prefWidth="251.0" promptText="chapter name" style="-fx-border-color: green; -fx-background-color: #e4fee5; -fx-background-radius: 7; -fx-border-radius: 7;">
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Button layoutX="147.0" layoutY="244.0" mnemonicParsing="false" onAction="#btnChapterAdd" prefHeight="31.0" prefWidth="84.0" text="Add" />
+   </children>
+</AnchorPane>

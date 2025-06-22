@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.FePmChController">
+    
+    <!-- Left Panel (with Header) -->
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="645.0" prefWidth="179.0" style="-fx-background-color: #3377ff; -fx-padding: 10; -fx-spacing: 20;">
+            
+            <!-- Left Panel Links -->
+            <Hyperlink onAction="#homeLinkAction" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;" text="Home" />
+            <Hyperlink onAction="#examLinkAction" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;" text="Exam" />
+            <Hyperlink onAction="#leaderBoardLinkAction" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;" text="Leader Board" />
+            <Hyperlink onAction="#historyLinkAction" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;" text="History" />
+            <Hyperlink onAction="#blogLinkAction" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;" text="Blog" />
+            <Hyperlink onAction="#contactUsLinkAction" style="-fx-font-size: 18px; -fx-text-fill: #FFFFFF;" text="Contact Us" />
+        </VBox>
+    </left>
+    
+    <!-- Top Navigation Bar -->
+    <top>
+        <HBox prefHeight="72.0" prefWidth="1366.0" style="-fx-background-color: #99ccff; -fx-padding: 10 20; -fx-spacing: 20; -fx-border-radius: 10;" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fitHeight="73.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ITPEC-logo-transparent.png" />
+               </image>
+            </ImageView>
+            <TextField alignment="CENTER_RIGHT" prefHeight="7.0" prefWidth="200.0" promptText=" Search🔍">
+               <HBox.margin>
+                  <Insets left="700.0" top="25.0" />
+               </HBox.margin>
+            </TextField>
+            <VBox prefHeight="73.0" prefWidth="69.0">
+               <children>
+                  <Hyperlink onAction="#updateProfileLinkAction" prefHeight="65.0" prefWidth="63.0" style="-fx-text-fill: #FFFFFF; -fx-font-size: 40px; -fx-underline: false;" text="👤" />
+                  <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="58.0" style="-fx-text-fill: #FFFFFF;" text="Profile" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="-15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="73.0" prefWidth="43.0">
+               <children>
+                  <Hyperlink onAction="#logoutLinkAction" prefHeight="57.0" prefWidth="42.0" style="-fx-text-fill: #FFFFFF; -fx-font-size: 40px; -fx-underline: false;" text="🚪" wrapText="true" />
+                  <Label style="-fx-text-fill: #FFFFFF;" text="Logout" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="-15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+    </top>
+   <center>
+      <VBox prefHeight="506.0" prefWidth="920.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="886.0" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 30px; -fx-font-weight: bold; -fx-background-color: #3377ff;" text="FE AM Questions Generator">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="344.0" prefWidth="990.0">
+               <children>
+                  <VBox prefHeight="391.0" prefWidth="300.0" spacing="10">
+                     <children>
+                        <Label style="-fx-font-family: 'System'; -fx-font-size: 20px; -fx-font-style: italic;" text="Select Subjects" />
+                        <CheckBox text="Select / Deselect All">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="System Development Technology">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="Software Development Management Techniques">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text=" Algorithm and Programming">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="Computer Component">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="Software">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="Database">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="Network">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                        <CheckBox text="Security">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </CheckBox>
+                     </children>
+                  </VBox>
+                  <ScrollPane prefHeight="300.0" prefWidth="243.0">
+                     <content>
+                        <HBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="220.0" style="-fx-padding: 10;">
+                           <children>
+                              <VBox prefHeight="503.0" prefWidth="156.0" spacing="10">
+                                 <children>
+                                    <Label style="-fx-font-family: 'System'; -fx-font-size: 20px; -fx-font-style: italic;" text="Select Quiz Sets" />
+                                    <CheckBox text="Select / Deselect All">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="April 2022 Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2021 Q4 Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2021 Q2 Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2020 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2020 Q2 Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2019 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2019 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2018 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2018 March Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2017 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2017 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2016 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2016 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2015 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2015 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2014 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2014 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2013 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2013 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2012 April Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox text="2012 October Exam">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+                  <VBox alignment="TOP_CENTER" prefHeight="606.0" prefWidth="189.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="94.0" text="Random Tips">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Label>
+                        <Label prefHeight="163.0" prefWidth="188.0" style="-fx-background-color: #e6f7ff;" text="Project management is the way a person organizes and manages resources that are necessary to complete a project. People that manage projects are known as Project Managers. A project is a piece of work which is not a process or an operation. It has a start, an end, and goals. [Ref]" wrapText="true" />
+                        <Button mnemonicParsing="false" onAction="#testLinkAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ffcc00; -fx-text-fill: #FFFFFF; -fx-font-size: 14px;" text="Start Now -&gt;">
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="150.0" right="150.0" top="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

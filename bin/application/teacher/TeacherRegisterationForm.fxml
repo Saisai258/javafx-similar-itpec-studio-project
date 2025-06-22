@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top, #2e5ddf, #6699ff); -fx-font-family: Arial;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.teacher.controller.TeacherRegisterationFormController">
+
+    <children>
+        <!-- Left Panel -->
+        <VBox alignment="TOP_CENTER" layoutX="50.0" layoutY="73.0" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #6699ff; -fx-padding: 20; -fx-background-radius: 20px 0px 0px 20px;">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/pngtree-graduate-student-profile-education-human-picture-image_8217698.png" />
+                    </image>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+                </ImageView>
+                <Label style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" text="INFORMATION" />
+                <Label style="-fx-text-fill: white; -fx-font-size: 12;" text="Welcome to the Teacher Registration Portal! Please fill out all required fields in the form to create your account. Ensure your details are accurate to avoid delays during verification." textAlignment="JUSTIFY" wrapText="true" />
+            </children>
+        </VBox>
+
+        <!-- Right Panel -->
+        <VBox alignment="CENTER" layoutX="300.0" layoutY="73.0" prefHeight="500.0" prefWidth="350.0" style="-fx-padding: 20; -fx-background-color: #e6e6e6; -fx-background-radius: 0px 20px 20px 0px;">
+            <children>
+
+                <HBox alignment="CENTER" prefHeight="86.0" prefWidth="310.0">
+                    <children>
+                  <ImageView fx:id="photoImgView" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/images.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </HBox>
+                <Button onAction="#photoBrowse" prefWidth="80.0" style="-fx-background-color: #ffcc00;" text="Browse">
+                    <font><Font size="11.0" /></font>
+                    <cursor><Cursor fx:constant="HAND" /></cursor>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </Button>
+
+                <TextField fx:id="txtname" promptText="Your Name" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+
+                <TextField fx:id="txtemail" promptText="Your Email" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+
+                <HBox spacing="10">
+                    <children>
+                        <PasswordField fx:id="txtpassword1" promptText="Password" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+                        <PasswordField fx:id="txtpassword2" promptText="Confirm Password" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+                    </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </HBox>
+
+                <HBox spacing="10">
+                    <children>
+                        <ComboBox fx:id="cbophone" prefWidth="80.0" promptText="Code">
+                            <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ComboBox>
+                        <TextField fx:id="txtphone" prefHeight="26.0" prefWidth="225.0" promptText="Phone Number" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;" />
+                    </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </HBox>
+
+                <TextField fx:id="txtaddress" prefHeight="60.0" prefWidth="315.0" promptText="Your Address" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+
+                <DatePicker fx:id="dbDOB" prefHeight="26.0" prefWidth="309.0" promptText="Date of Birth" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+                    <cursor><Cursor fx:constant="HAND" /></cursor>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </DatePicker>
+
+                <HBox spacing="10">
+                    <children>
+                        <Label prefWidth="60.0" text="Gender" />
+                        <RadioButton fx:id="optmale" text="Male">
+                            <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </RadioButton>
+                        <RadioButton fx:id="optfemale" text="Female">
+                            <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </RadioButton>
+                    </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </HBox>
+
+                <TextField fx:id="txtspecial" promptText="Specialization" style="-fx-background-color: #FFFFFF; -fx-border-width: 0 3 3 0; -fx-border-color: #cccccc;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TextField>
+
+                <Button onAction="#btnRegisterAction" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #ffcc00;" text="Register">
+                    <font><Font size="16.0" /></font>
+                    <cursor><Cursor fx:constant="HAND" /></cursor>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+      <Label layoutX="186.0" layoutY="14.0" style="-fx-text-fill: linear-gradient(to bottom right, #ffffff, #000033);" text="Teacher Registration Form">
+         <font>
+            <Font name="Monotype Corsiva" size="35.0" />
+         </font>
+      </Label>
+    </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

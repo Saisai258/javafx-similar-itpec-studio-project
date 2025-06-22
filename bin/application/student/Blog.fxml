@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.BlogController">
+   <children>
+      <VBox prefHeight="702.0" prefWidth="1166.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="700.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="894.0" prefWidth="1149.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="300.0" prefWidth="868.0" style="-fx-background-color: #FFFFFF; -fx-alignment: CENTER;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox fx:id="box1" alignment="CENTER" maxWidth="400.0" minHeight="263.0" prefHeight="280.0" prefWidth="350.0" spacing="20" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.8, 0, 5); -fx-background-color: white; -fx-max-height: 280; -fx-alignment: CENTER;">
+                                 <children>
+                                    <ImageView fitHeight="149.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50%;">
+                                       <image>
+                                          <Image url="@../images/tree-data-structure.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-font-family: 'Roboto', sans-serif; -fx-text-fill: #000000;" text="Tree Data Structures(1)" />
+                                    <Hyperlink onAction="#blog1LinkAction" style="-fx-text-fill: #000000; -fx-font-family: 'Roboto', sans-serif; -fx-font-size: 20px; -fx-underline: false; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 3);" text="View more »" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="box2" alignment="CENTER" maxWidth="370.0" minHeight="263.0" prefHeight="280.0" prefWidth="350.0" spacing="20" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.8, 0, 5); -fx-background-color: white; -fx-max-height: 280; -fx-alignment: CENTER;">
+                                 <children>
+                                    <ImageView fitHeight="151.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50%;">
+                                       <image>
+                                          <Image url="@../images/software-development-cycle.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-font-family: 'Roboto', sans-serif; -fx-text-fill: #000000;" text="Software Development" />
+                                    <Hyperlink onAction="#blog2LinkAction" style="-fx-text-fill: #000000; -fx-font-family: 'Roboto', sans-serif; -fx-font-size: 20px; -fx-underline: false; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 3);" text="View more »" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="box3" alignment="CENTER" maxWidth="396.0" minHeight="263.0" prefHeight="280.0" prefWidth="350.0" spacing="20" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.8, 0, 5); -fx-background-color: white; -fx-max-height: 280; -fx-alignment: CENTER;">
+                                 <children>
+                                    <ImageView fitHeight="167.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50%;">
+                                       <image>
+                                          <Image url="@../images/intro_scc_and_vcs.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-font-family: 'Roboto', sans-serif; -fx-text-fill: #000000;" text="Source/Version Control" />
+                                    <Hyperlink onAction="#blog6LinkAction" style="-fx-text-fill: #000000; -fx-font-family: 'Roboto', sans-serif; -fx-font-size: 20px; -fx-underline: false; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 3);" text="View more »" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="300.0" prefWidth="763.0" style="-fx-background-color: #FFFFFF; -fx-alignment: CENTER;">
+                           <children>
+                              <VBox fx:id="box4" alignment="CENTER" maxWidth="369.0" minHeight="263.0" prefHeight="280.0" prefWidth="350.0" spacing="20" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.8, 0, 5); -fx-background-color: white; -fx-max-height: 280; -fx-alignment: CENTER;">
+                                 <children>
+                                    <ImageView fitHeight="165.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50%;">
+                                       <image>
+                                          <Image url="@../images/what_is_incident_management.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-font-family: 'Roboto', sans-serif; -fx-text-fill: #000000;" text="IT Incident Management" />
+                                    <Hyperlink onAction="#blog5LinkAction" style="-fx-text-fill: #000000; -fx-font-family: 'Roboto', sans-serif; -fx-font-size: 20px; -fx-underline: false; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 3);" text="View more »" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="box5" alignment="CENTER" maxWidth="369.0" minHeight="263.0" prefHeight="280.0" prefWidth="350.0" spacing="20" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.8, 0, 5); -fx-background-color: white; -fx-max-height: 280; -fx-alignment: CENTER;">
+                                 <children>
+                                    <ImageView fitHeight="159.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50%;">
+                                       <image>
+                                          <Image url="@../images/800px-Business_Process_Reengineering_Cycle.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-font-family: 'Roboto', sans-serif; -fx-text-fill: #000000;" text="BPR" />
+                                    <Hyperlink onAction="#blog4LinkAction" style="-fx-text-fill: #000000; -fx-font-family: 'Roboto', sans-serif; -fx-font-size: 20px; -fx-underline: false; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 3);" text="View more »" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="box6" alignment="CENTER" maxWidth="396.0" minHeight="263.0" prefHeight="280.0" prefWidth="350.0" spacing="20" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.8, 0, 5); -fx-background-color: white; -fx-max-height: 280; -fx-alignment: CENTER;">
+                                 <children>
+                                    <ImageView fitHeight="151.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 50%;">
+                                       <image>
+                                          <Image url="@../images/number-system-tech.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-font-family: 'Roboto', sans-serif; -fx-text-fill: #000000;" text="Radix Conversion" />
+                                    <Hyperlink onAction="#blog3LinkAction" style="-fx-text-fill: #000000; -fx-font-family: 'Roboto', sans-serif; -fx-font-size: 20px; -fx-underline: false; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 3);" text="View more »" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

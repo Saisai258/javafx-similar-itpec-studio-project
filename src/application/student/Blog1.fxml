@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.student.controller.Blog1Controller">
+   <children>
+      <VBox layoutX="140.0" layoutY="14.0" prefHeight="2296.0" prefWidth="887.0" style="-fx-background-color: white;">
+         <children>
+            <ScrollPane prefHeight="588.0" prefWidth="887.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefHeight="2500.0" prefWidth="870.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="247.0" fitWidth="336.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tree-data-structure.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="367.0" text="Tree Data Structures(1)">
+                           <font>
+                              <Font name="Arial Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="By Administrator 19-Sep-2022">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="43.0" prefWidth="848.0" text="A tree structure is a hierarchical data structure which can represent multiple children under a parent node. The tree data structure has roots, branches and leaves, but it is drawn upside-down compared with the actual tree structure. We will describe the 5 types of tree structures." textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="21.0" prefWidth="335.0" text="Basic Characteristics of a Tree">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="A tree can have no nodes or it can have one special node known as the root and zero or more subtrees." textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="Every branch of the tree directly or indirectly derived from the root." textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="Every child has a single parent, but a single parent can have multiple children." textAlignment="JUSTIFY" wrapText="true" />
+                        <ImageView fitHeight="350.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="We will describe the following 6 types of tree data structures." textAlignment="JUSTIFY" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(1) General Tree" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(2) Binary Tree and Complete Binary Tree" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(3) Binary Search Tree" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(4) Max Heap and Min Heap" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(5) AVL-tree" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="22.0" prefWidth="848.0" text="(6) B-tree" textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="21.0" prefWidth="335.0" text="(1) General Tree">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="22.0" prefWidth="848.0" text="A general tree is a tree data structure which follows the basic characteristics of a tree and a node can have any number of children nodes. " textAlignment="JUSTIFY" wrapText="true" />
+                        <ImageView fitHeight="350.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="(2) Binary Tree">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="43.0" prefWidth="848.0" text="A binary tree is a tree data structure that has the basic characteristics of a tree structure and some special properties, such as the fact that a node can only have two child nodes (children), known as the left child and right child." textAlignment="JUSTIFY" wrapText="true" />
+                        <ImageView fitHeight="350.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="(3) Binary Search Tree">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="72.0" prefWidth="849.0" text="A binary search tree is a tree data structure that based on binary tree characteristics which are at most two children nodes with additional property. This property specifies that the value (or key) of a given node's left child must be less than or equal to the parent value, while the value of the right child must be greater than or equal to the parent value." textAlignment="JUSTIFY" wrapText="true" />
+                        <ImageView fitHeight="350.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(3).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="(4) Max-Heap and Min-Heap">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="43.0" prefWidth="848.0" text="A Heap is a type of tree-based data structure in which the tree is an entire binary tree. There are two types of heaps such as max heap and min heap. " textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="43.0" prefWidth="848.0" text="Max-Heap: In a Max-Heap, the key at the root node must be the greatest among all of its children. The same property must be present for all subtrees in that Binary Tree." textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="43.0" prefWidth="848.0" text="Min-Heap: In a Min-Heap, the key at the root node must be the smallest of all the keys at its children. The same property must be present for all subtrees in that Binary Tree." textAlignment="JUSTIFY" wrapText="true" />
+                        <ImageView fitHeight="350.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download%20(4).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="335.0" text="(5) AVL-tree">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="16.0" prefWidth="848.0" text="An AVL tree is a self-balancing binary search tree. This is the first tree introduced which automatically balances its height." textAlignment="JUSTIFY" wrapText="true" />
+                        <Label prefHeight="21.0" prefWidth="335.0" text="(6) B-tree">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="16.0" prefWidth="848.0" text="The B tree is a self-balancing search tree with multiple nodes that keep data sorted. Each node has two or more children and multiple keys." textAlignment="JUSTIFY" wrapText="true" />
+                        <HBox prefHeight="26.0" prefWidth="828.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#preLinkAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #ffcc00;" text="&lt;&lt;&lt;Previous">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextLinkAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ffcc00;" text="Next&gt;&gt;&gt;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="670.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="255.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(  to bottom,  #3377ff,  #468fff,  #5aa5ff,  #6ec0ff,  #82daff,   #96f2ff,   #aad7ff,   #bed7ff);" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.controller.IDGenerateController">
+   <children>
+      <Label layoutX="32.0" layoutY="24.0" prefHeight="60.0" prefWidth="337.0" text="Welcome ! . Please get your ID for LogIn" wrapText="true">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="163.0" layoutY="192.0" mnemonicParsing="false" onAction="#btnCancle" prefHeight="33.0" prefWidth="76.0" style="-fx-background-color: none; -fx-background-radius: 7; -fx-border-color: blue; -fx-border-radius: 7;" text="OK!" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="161.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="getId" layoutX="121.0" layoutY="84.0" prefHeight="39.0" prefWidth="159.0" style="-fx-background-color: none;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="150.0" text="Password : " visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="127.0" layoutY="150.0" style="-fx-background-color: none;" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

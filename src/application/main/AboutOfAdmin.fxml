@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="1166.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.controller.AboutOfAdminController">
+  <content>
+    <AnchorPane prefHeight="611.0" prefWidth="1163.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="416.0" fitWidth="517.0" layoutX="65.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/photo_2025-05-27_06-34-37.jpg" />
+               </image></ImageView>
+            <Label layoutX="428.0" layoutY="8.0" text="OUR ADMINISTRATOR">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="666.0" layoutY="58.0" text="Description.!" underline="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Text layoutX="660.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="An administrator's role depends on whether it’s a small primary school or a large secondary school, for example, where duties will be divvied up between a team. But expect the role to cover the following:" wrappingWidth="491.4853515625" />
+            <Text layoutX="722.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  welcoming visitors to the school and dealing with their enquiries" AnchorPane.leftAnchor="722.0" />
+            <Text layoutX="752.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  answering the phone" AnchorPane.leftAnchor="752.0" />
+            <Text layoutX="776.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  administration relating to pupil attendance" AnchorPane.leftAnchor="776.0" />
+            <Text layoutX="785.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  managing email/post" AnchorPane.leftAnchor="785.0" />
+            <Text layoutX="790.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  using IT systems to draft letters, emails, reports, newsletters" AnchorPane.leftAnchor="790.0" />
+            <Text layoutX="791.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  monitoring school supplies" AnchorPane.leftAnchor="791.0" />
+            <Text layoutX="785.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  keeping financial records" AnchorPane.leftAnchor="785.0" />
+            <Text layoutX="770.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  keeping paper and electronic records up to date" AnchorPane.leftAnchor="770.0" />
+            <Text layoutX="749.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  using reprographic equipment" AnchorPane.leftAnchor="749.0" />
+            <Text layoutX="716.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  ordering resources, paying invoices and banking cash" AnchorPane.leftAnchor="716.0" />
+            <Text layoutX="658.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*  sending key educational data about the school to the Department of Education or equivalent" wrappingWidth="459.6669921875" AnchorPane.leftAnchor="658.0" />
+            <ImageView fitHeight="245.0" fitWidth="292.0" layoutX="543.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin-removebg-preview.png" />
+               </image></ImageView>
+            <Hyperlink layoutX="953.0" layoutY="534.0" onAction="#btnAdmin" prefHeight="54.0" prefWidth="184.0" text="Are You Admin &gt;&gt;&gt;" textFill="#2e5ddf">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Hyperlink>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
